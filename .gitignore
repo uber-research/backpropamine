@@ -9,7 +9,6 @@
 *.swp
 *.txt
 *.png
-*.gif
 *.dat
 loss*
 grads_*
