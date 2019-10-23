@@ -4,10 +4,10 @@ This code is a deliberately simplified version of the `maze` experiment. The
 code is made as simple as possible, with copious comments.
 
 
-##Usage
+## Usage
 
 To run the program, just run `python3 maze.py`.
-Default parameters should be able to meta-learn the task.
+Default parameters should be able to meta-learn the task. The will also produce some output files, including network checkpoints, losses, etc. 
 
 ## Backpropamine network
 

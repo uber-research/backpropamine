@@ -215,7 +215,6 @@ def train(paramdict):
     for numiter in range(params['nbiter']):
 
         PRINTTRACE = 0
-        #if (numiter+1) % (1 + params['pe']) == 0:
         if (numiter+1) % (params['pe']) == 0:
             PRINTTRACE = 1
 
@@ -332,10 +331,10 @@ def train(paramdict):
             loss += ( params['bent'] * y.pow(2).sum() / BATCHSIZE )  
 
 
-            if PRINTTRACE:
-                print("Step ", numstep, " Inputs (to 1st in batch): ", inputs[0, :TOTALNBINPUTS], " - Outputs(1st in batch): ", y[0].data.cpu().numpy(), " - action chosen(1st in batch): ", numactionschosen[0],
-                        #" - mean abs pw: ", np.mean(np.abs(pw.data.cpu().numpy())), 
-                        " -Reward (this step, 1st in batch): ", reward[0])
+            #if PRINTTRACE:
+            #    print("Step ", numstep, " Inputs (to 1st in batch): ", inputs[0, :TOTALNBINPUTS], " - Outputs(1st in batch): ", y[0].data.cpu().numpy(), " - action chosen(1st in batch): ", numactionschosen[0],
+            #            #" - mean abs pw: ", np.mean(np.abs(pw.data.cpu().numpy())), 
+            #            " -Reward (this step, 1st in batch): ", reward[0])
 
 
 
